@@ -1,43 +1,107 @@
-# Getting Started with Create React App
+# KanasKraft Pottery Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A marketing website for KanasKraft pottery showcasing handcrafted ceramic art and pottery items. The website is built with React and Material UI, optimized for SEO, and hosted on GitHub Pages.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Responsive design for all device sizes
+- SEO optimized with meta tags, structured data, sitemap, and robots.txt
+- Material UI components for a modern and consistent UI
+- React Router for client-side routing
+- Easy deployment to GitHub Pages
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React.js
+- Material UI
+- React Router
+- React Helmet for SEO
+- GitHub Pages for hosting
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (v14.0.0 or higher)
+- npm (v6.0.0 or higher)
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+```bash
+git clone https://github.com/kanaskraft/website.git
+cd website/pottery-website
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install dependencies:
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Start the development server:
+```bash
+npm start
+```
 
-### `npm run eject`
+The website will be available at [http://localhost:3000](http://localhost:3000).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Deployment to GitHub Pages
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The project is configured for easy deployment to GitHub Pages.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Update the `homepage` field in `package.json` with your GitHub Pages URL:
+```json
+"homepage": "https://kanaskraft.github.io/website"
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Deploy to GitHub Pages:
+```bash
+npm run deploy
+```
+
+This will build the project and push it to the `gh-pages` branch of your repository.
+
+## Project Structure
+
+```
+pottery-website/
+├── public/                 # Static files
+│   ├── images/             # Image assets
+│   ├── index.html          # HTML template
+│   ├── robots.txt          # SEO robots file
+│   └── sitemap.xml         # XML sitemap
+├── src/
+│   ├── assets/             # Assets (images, icons)
+│   ├── components/         # Reusable components
+│   │   ├── layout/         # Layout components
+│   │   └── ui/             # UI components
+│   ├── contexts/           # React contexts
+│   ├── hooks/              # Custom React hooks
+│   ├── pages/              # Page components
+│   ├── themes/             # MUI theme configuration
+│   ├── utils/              # Utility functions
+│   │   └── seo/            # SEO utilities
+│   ├── App.js              # Main App component
+│   └── index.js            # Entry point
+└── package.json            # Project configuration
+```
+
+## SEO Features
+
+- Meta tags for all pages
+- Open Graph and Twitter card support
+- Structured data (JSON-LD)
+- XML sitemap
+- Robots.txt
+- Canonical URLs
+- SEO-friendly routing
+
+## Wiki Documentation
+
+Additional documentation is available in the GitHub Wiki:
+- [Content Management Guide](https://github.com/kanaskraft/website/wiki/Content-Management)
+- [Development Guidelines](https://github.com/kanaskraft/website/wiki/Development-Guidelines)
+- [SEO Best Practices](https://github.com/kanaskraft/website/wiki/SEO-Best-Practices)
 
 ## Learn More
 
